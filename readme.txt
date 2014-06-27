@@ -4,5 +4,5 @@ Demo:
 Version: 1.0
 Author: Ivan Cordova
 Author Email: cimiakbal@gmail.com
-CSS: foundation.min
+CSS: foundation.min, kuuk
 JS: vendor/modernizr

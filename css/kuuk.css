@@ -7,9 +7,12 @@ Author: Ivan Cordova
 Author Email: cimiakbal@gmail.com
 */
 
-/* header background */
+/* header */
 body#page{
 	background: #031634 url(../images/terra.gif) 50% 0 repeat-x;
+}
+#header_nav ul {
+    font-size: 12px;
 }
 
 /* footer */

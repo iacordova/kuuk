@@ -38,14 +38,17 @@
 										<input type="hidden" name="action" value="signin" />
 										<label for="username"><?php echo Kohana::lang('ui_main.email');?></label><input type="text" name="username" id="username" class="" />
 										<label for="password"><?php echo Kohana::lang('ui_main.password');?></label><input name="password" type="password" class="" id="password" size="20" />
-										<input type="submit" name="submit" value="<?php echo Kohana::lang('ui_main.login'); ?>" />
+										<input type="submit" name="submit" value="<?php echo Kohana::lang('ui_main.login'); ?>" class="small button" />
 										<?php echo form::close(); ?>
+										<br>
 									</div>
 								</div>
 							</li>
-							<li><a href="<?php echo url::site()."login/?newaccount";?>"><?php echo Kohana::lang('ui_main.login_signup_click'); ?></a></li>
 							<li>
-								<a href="#" onclick="return false">
+								<a href="<?php echo url::site()."login/?newaccount";?>"><?php echo Kohana::lang('ui_main.login_signup_click'); ?></a>
+							</li>
+							<li>
+								<a onclick="return false">
 									<?php echo Kohana::lang('ui_main.forgot_password');?>
 									<?php echo form::open('login/', array('id' => 'header_nav_userforgot_form')); ?>
 									<input type="hidden" name="action" value="forgot" />

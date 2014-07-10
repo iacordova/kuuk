@@ -7,12 +7,16 @@ Author: Ivan Cordova
 Author Email: cimiakbal@gmail.com
 */
 
+
 /* header */
 body#page{
-	background: #031634 url(../images/terra.gif) 50% 0 repeat-x;
+	background: #eeeeee;
 }
 #header_nav ul {
     font-size: 12px;
+}
+form#userpass_form {
+    
 }
 
 /* footer */
@@ -42,6 +46,15 @@ div#logo{
     background-color: #E8DDCB;
 }
 
+/* Top bar menu */
+.top-bar-section .left input[type="text"] {
+    height: 30px;
+}
+
+a.overform:hover {
+    background: none !important;
+}
+
 /* Main Menu */
 div#mainmenu{
     background-color: #C2C2C2;
@@ -61,8 +74,13 @@ div#mainmenu a.active{
     background-color: #036564;
 }
 
-
 /* Submit Button */
+div.submit-incident {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
 div.submit-incident a{
     background-color: #CDB380;
     color: #000;
@@ -72,6 +90,16 @@ div.submit-incident a:hover{
 	background-color: #368C00;
 }
 
+/* Language selector */
+div.language-box {
+    float: right;
+}
+div.language-box select {
+    width: 100%;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: inherit;
+}
 
 /* Category Filter Side Bar */
 ul.category-filters{

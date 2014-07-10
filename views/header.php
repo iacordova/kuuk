@@ -39,47 +39,59 @@
 	<?php echo $header_nav; ?>
 
 	<!-- wrapper -->
-	<div class="wrapper floatholder rapidxwpr">
+	<div class="row">
 
-		<!-- header -->
-		<div id="header">
+		<div class="large-12 columns">
 
-			<!-- searchbox -->
-			<div id="searchbox">
+			<!-- header -->
+			<div id="header">
 
-				<!-- languages -->
-				<?php echo $languages;?>
-				<!-- / languages -->
+				
+				<div class="row">
 
-				<!-- searchform -->
-				<?php echo $search; ?>
-				<!-- / searchform -->
+					<!-- logo -->
+					<div class="large-8 columns">
+
+						<?php if ($banner == NULL): ?>
+							<h1><a href="<?php echo url::site();?>"><?php echo $site_name; ?></a></h1>
+							<span><?php echo $site_tagline; ?></span>
+						<?php else: ?>
+							<a href="<?php echo url::site();?>"><img src="<?php echo $banner; ?>" alt="<?php echo $site_name; ?>" /></a>
+						<?php endif; ?>
+
+					</div>
+					<!-- / logo -->
+
+					<div class="large-4 columns">
+
+						<div class="row">
+							<div class="large-12 columns">
+								<!-- languages -->
+								<?php echo $languages;?>
+								<!-- / languages -->
+								<!-- submit incident -->
+								<a class="button success right" href="<?php echo url::site(); ?>/reports/submit/"><?php echo Kohana::lang('ui_main.submit'); ?></a>
+								<!-- / submit incident -->
+							</div>
+
+						</div>
+						<!-- / row -->
+
+					</div>
+
+				</div>
+				<!-- / row -->
 
 			</div>
-			<!-- / searchbox -->
-
-			<!-- logo -->
-			<?php if ($banner == NULL): ?>
-			<div id="logo">
-				<h1><a href="<?php echo url::site();?>"><?php echo $site_name; ?></a></h1>
-				<span><?php echo $site_tagline; ?></span>
-			</div>
-			<?php else: ?>
-			<a href="<?php echo url::site();?>"><img src="<?php echo $banner; ?>" alt="<?php echo $site_name; ?>" /></a>
-			<?php endif; ?>
-			<!-- / logo -->
-
-			<!-- submit incident -->
-			<?php echo $submit_btn; ?>
-			<!-- / submit incident -->
+			<!-- / header -->
+	        <!-- / header item for plugins -->
+	        <?php
+	            // Action::header_item - Additional items to be added by plugins
+		        Event::run('ushahidi_action.header_item');
+	        ?>
 
 		</div>
-		<!-- / header -->
-        <!-- / header item for plugins -->
-        <?php
-            // Action::header_item - Additional items to be added by plugins
-	        Event::run('ushahidi_action.header_item');
-        ?>
+		<!-- / large-12 columns -->
 
 		<!-- main body -->
 		<div id="middle">

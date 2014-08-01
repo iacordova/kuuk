@@ -36,7 +36,56 @@
 
 <body id="page" class="<?php echo $body_class; ?>">
 
-	<?php echo $header_nav; ?>
+	<!-- Header Nav -->
+	<div class="row">
+		<div class="large-12 columns">
+
+			<div class="fixed">
+
+				<nav class="top-bar" data-topbar="">
+
+					<ul class="title-area">
+						<li class="name"><h1><a href="<?php echo url::site();?>"><?php echo $site_name; ?></a></h1></li>
+						<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		    			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+					</ul><!-- / title-area -->
+
+					<section class="top-bar-section">
+						
+						<?php echo $header_nav; ?>
+						
+						<!-- Left Nav Section -->
+					
+						<ul class="left">
+							<!-- searchform -->
+							<li class="has-form">
+								<?php echo form::open("search", array('method' => 'get', 'id' => 'site-search')); ?>
+								<div class="row collapse"> 
+									<div class="large-12 columns"> 
+										<input id="inputIcon" type="text" name="k" value="" placeholder="<?php echo Kohana::lang('ui_main.search'); ?>">
+									</div> 
+								</div> 
+								<?php form::close(); ?>
+							</li>
+							<!-- / searchform -->
+
+							<li class="divider"></li>
+							
+							<!-- Main Tabs -->
+							<?php nav::main_tabs($this_page); ?>
+							
+							<?php
+								// Action::header_nav - Add items to header nav area
+								Event::run('ushahidi_action.header_nav');
+							?>
+						</ul>
+					</section><!-- / top-bar-section -->
+
+				</nav>
+			
+			</div><!-- / fixed -->
+		</div><!-- / large-12 columns -->
+	</div><!--  / row -->
 
 	<!-- wrapper -->
 	<div class="row">
@@ -94,8 +143,8 @@
 		<!-- / large-12 columns -->
 
 		<!-- main body -->
-		<div id="middle">
-			<div class="background layoutleft">
+		<div class="row">
+			<div class="large-12 columns">
 
 				<!-- mainmenu -->
 				<div id="mainmenu" class="clearingfix">

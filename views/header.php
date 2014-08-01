@@ -55,7 +55,6 @@
 						<?php echo $header_nav; ?>
 						
 						<!-- Left Nav Section -->
-					
 						<ul class="left">
 							<!-- searchform -->
 							<li class="has-form">
@@ -74,6 +73,10 @@
 							<!-- Main Tabs -->
 							<?php nav::main_tabs($this_page); ?>
 							
+							<?php if ($allow_feed == 1) { ?>
+								<li><a href="<?php echo url::site(); ?>feed/"><img alt="<?php echo html::escape(Kohana::lang('ui_main.rss')); ?>" src="<?php echo url::file_loc('img'); ?>media/img/icon-feed.png" style="vertical-align: middle;" border="0" /></a></li>
+							<?php } ?>
+
 							<?php
 								// Action::header_nav - Add items to header nav area
 								Event::run('ushahidi_action.header_nav');
@@ -145,16 +148,3 @@
 		<!-- main body -->
 		<div class="row">
 			<div class="large-12 columns">
-
-				<!-- mainmenu -->
-				<div id="mainmenu" class="clearingfix">
-					<ul>
-						<?php nav::main_tabs($this_page); ?>
-					</ul>
-
-					<?php if ($allow_feed == 1) { ?>
-					<div class="feedicon"><a href="<?php echo url::site(); ?>feed/"><img alt="<?php echo html::escape(Kohana::lang('ui_main.rss')); ?>" src="<?php echo url::file_loc('img'); ?>media/img/icon-feed.png" style="vertical-align: middle;" border="0" /></a></div>
-					<?php } ?>
-
-				</div>
-				<!-- / mainmenu -->

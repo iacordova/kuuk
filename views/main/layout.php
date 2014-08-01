@@ -230,13 +230,13 @@
 				<!-- filters -->
 				<div class="filters clearingfix">
 					<div class="media-filters">
-						<strong><?php echo Kohana::lang('ui_main.filters'); ?></strong>
-						<ul>
-							<li><a id="media_0" class="active" href="#"><span><?php echo Kohana::lang('ui_main.all'); ?></span></a></li>
-							<li><a id="media_4" href="#"><span><?php echo Kohana::lang('ui_main.news'); ?></span></a></li>
-							<li><a id="media_1" href="#"><span><?php echo Kohana::lang('ui_main.pictures'); ?></span></a></li>
-							<li><a id="media_2" href="#"><span><?php echo Kohana::lang('ui_main.video'); ?></span></a></li>
-						</ul>
+						<dl class="sub-nav">
+							<dt><strong><?php echo Kohana::lang('ui_main.filters'); ?></strong></dt>
+							<dd class="active"><?php echo Kohana::lang('ui_main.all'); ?></dd>
+							<dd><?php echo Kohana::lang('ui_main.news'); ?></dd>
+							<dd><?php echo Kohana::lang('ui_main.pictures'); ?></dd>
+							<dd><?php echo Kohana::lang('ui_main.video'); ?></dd>
+						</dl>
 					</div>
 
 

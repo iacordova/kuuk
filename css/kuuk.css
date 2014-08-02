@@ -102,13 +102,13 @@ div.language-box select {
 }
 
 /* Category Filter Side Bar */
-ul.category-filters{
+ul.category-filters {
     background: #E7E3DA;
     border-top-color: #C7C2BC;
     border-bottom-color: #C7C2BC;
 }
 
-ul.category-filters li a{
+ul.category-filters li a {
     color: #3F3F3F;
     border-color: #E7E3DA;
 }
@@ -117,4 +117,15 @@ ul.category-filters li a:hover, ul.category-filters li a.active {
     color: #FFFFFF;
     background-color: #036564;
     border-color: #036564;
+}
+
+/* Main */
+div#main {
+    padding: 10px 0;
+    background: #FFFFFF;
+}
+
+/* Map */
+div.map {
+    width: 100%;
 }

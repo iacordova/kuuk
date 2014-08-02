@@ -1,4 +1,4 @@
-<div class="slider-holder">
+<div>
 	<?php echo form::open(NULL, array('method' => 'get')); ?>
 		<input type="hidden" value="0" name="currentCat" id="currentCat"/>
 		<fieldset>

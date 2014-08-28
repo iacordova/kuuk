@@ -26,7 +26,7 @@
 		
 		<ul class="dropdown">
 			<li>
-				<a onclick="return false" class="overform">
+				<a class="overform">
 					<?php echo form::open('login/', array('id' => 'userpass_form')); ?>
 					<div class="row">
 						<div class="large-12 columns">

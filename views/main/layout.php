@@ -253,11 +253,11 @@
 <!-- / main body -->
 
 <!-- content -->
-<div class="content-container row">
+<div id="contentfeeds" class="row">
 
 	<!-- content blocks -->
-	<div class="content-blocks large-12 columns">
-		<ul class="content-column">
+	<div class="large-12 columns">
+		<ul>
 			<?php blocks::render(); ?>
 		</ul>
 	</div>

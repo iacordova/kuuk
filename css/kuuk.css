@@ -129,3 +129,13 @@ div#main {
 div.map {
     width: 100%;
 }
+
+/* Content */
+div#contentfeeds ul, div#contentfeeds ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+div#contentfeeds div.content-block {
+    margin: 0;
+}

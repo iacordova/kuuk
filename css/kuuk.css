@@ -139,3 +139,9 @@ div#contentfeeds ul, div#contentfeeds ul li {
 div#contentfeeds div.content-block {
     margin: 0;
 }
+
+/* Footer */
+div.footermenu {
+    margin: 0;
+    float: none;
+}

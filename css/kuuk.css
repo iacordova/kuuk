@@ -145,3 +145,16 @@ div.footermenu {
     margin: 0;
     float: none;
 }
+
+/* Login */
+div#ushahidi_site_name {
+    margin-top: 80px;
+    box-shadow: 0 10px 10px #9a9a9a;
+}
+div#ushahidi_site_name div#logo {
+    background: none;
+}
+div#openid_login, div#create_account {
+    width: 100%;
+    float: none;
+}

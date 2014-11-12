@@ -146,5 +146,4 @@
 		<!-- / large-12 columns -->
 
 		<!-- main body -->
-		<div class="row">
-			<div class="large-12 columns">
+		<div class="large-12 columns">

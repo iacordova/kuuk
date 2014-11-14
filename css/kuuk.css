@@ -144,6 +144,7 @@ div#contentfeeds div.content-block {
 div#reports-box, div#filters-box {
     float: none;
     width: 100%;
+    margin: 0;
 }
 .rb_nav-controls, .rb_nav-controls table, .rb_nav-controls td {
     border:0;
@@ -156,6 +157,18 @@ div#reports-box, div#filters-box {
 }
 ul.link-toggle.lt-icons-only li a {
     padding: 3px 9px;
+}
+#rb_list-view .rb_report {
+    overflow: hidden;
+}
+.r_media, .r_details {
+    margin: 0;
+}
+p.r_date {
+    right: 15px;
+}
+div.r_description, #rb_map-view {
+    width: 100%;
 }
 /* Footer */
 div.footermenu {

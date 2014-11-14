@@ -2,10 +2,10 @@
 	<div class="row">
 		<!-- start reports block -->
 		<div class="large-12 columns">
-			<h2 class="heading">
+			<h3 class="heading">
 				<?php echo Kohana::lang('ui_main.showing_reports_from', array(date('M d, Y', $oldest_timestamp), date('M d, Y', $latest_timestamp))); ?> 
 				<a href="#" class="btn-change-time ic-time"><?php echo Kohana::lang('ui_main.change_date_range'); ?></a>
-			</h2>
+			</h3>
 			
 			<div id="tooltip-box">
 				<div class="tt-arrow"></div>
@@ -61,7 +61,7 @@
 				<!-- end #reports-box -->
 				<div class="large-4 columns">
 					<div id="filters-box">
-						<h3><?php echo Kohana::lang('ui_main.filter_reports_by'); ?></h3>
+						<h4><?php echo Kohana::lang('ui_main.filter_reports_by'); ?></h4>
 						<div id="accordion">
 							
 							<h3>

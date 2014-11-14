@@ -7,7 +7,7 @@
 	{
 		?>
 		<!-- red-box -->
-		<div class="error">
+		<div class="red-box">
 			<h4><?php echo Kohana::lang('ui_main.error');?></h4>
 			<ul>
 				<?php

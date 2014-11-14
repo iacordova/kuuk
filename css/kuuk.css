@@ -28,7 +28,7 @@ div#underfooter{
 	background-color: transparent;
 }
 
-/* links */
+/* global items */
 a{
     color: #3764aa;
 }
@@ -39,6 +39,9 @@ a:hover{
 
 table.table-list tbody tr td a{
     color: #0099CC;
+}
+input[type="file"] {
+    font-size: 100%;
 }
 
 /* Logo Box */
@@ -169,13 +172,13 @@ ul.link-toggle.lt-icons-only li a {
 #rb_list-view .rb_report {
     overflow: hidden;
 }
-.r_media, .r_details {
+.r_media, .r_details, form .row .row.link-row {
     margin: 0;
 }
 p.r_date {
     right: 15px;
 }
-div.r_description, #rb_map-view, .report-map .map-holder {
+div.r_description, #rb_map-view, .report-map .map-holder, .report_optional {
     width: 100%;
 }
 ul.filter-list {
@@ -198,6 +201,12 @@ div.comment-block h5 {
 }
 ul.map-toggle {
     display: none;
+}
+.allowed-html {
+    display: block;
+}
+a.add, a.rem {
+    margin: 0 0 12px 2px;
 }
 
 /* Footer */

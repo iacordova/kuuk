@@ -102,6 +102,9 @@ div.language-box select {
 }
 
 /* Category Filter Side Bar */
+div.cat-filters {
+    margin-top: 10px;
+}
 ul.category-filters {
     background: #E7E3DA;
     border-top-color: #C7C2BC;
@@ -119,9 +122,14 @@ ul.category-filters li a:hover, ul.category-filters li a.active {
     border-color: #036564;
 }
 
+div.how-to-report-methods div {
+    line-height: 1.5;
+}
+
 /* Main */
-div#main {
+div#main, div#content {
     padding: 10px 0;
+    margin: 0;
     background: #FFFFFF;
 }
 
@@ -169,6 +177,12 @@ p.r_date {
 }
 div.r_description, #rb_map-view {
     width: 100%;
+}
+ul.filter-list {
+    margin-left: 0;
+}
+a.filter-button:hover {
+    color: #ffffff;
 }
 /* Footer */
 div.footermenu {

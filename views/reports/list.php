@@ -134,7 +134,8 @@
 									<?php echo $incident_verified; ?>
 								</h3>
 							<p class="r_date r-3 bottom-cap"><?php echo $incident_date; ?></p>
-							<div class="r_description"> <?php echo $incident_description; ?>  
+							<div class="r_description"> 
+							  <p><?php echo $incident_description; ?></p>
 							  <a class="btn-show btn-more" href="#incident_<?php echo $incident_id ?>"><?php echo Kohana::lang('ui_main.more_information'); ?> &raquo;</a> 
 							  <a class="btn-show btn-less" href="#incident_<?php echo $incident_id ?>">&laquo; <?php echo Kohana::lang('ui_main.less_information'); ?></a> 
 							</div>

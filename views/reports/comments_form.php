@@ -41,14 +41,14 @@
 	{
 		?>
 		<div class="report_row row">
-			<strong><?php echo $user->name; ?></strong>
+			<div class="large-12 columns"><p><strong><?php echo $user->name; ?></strong></p></div>
 		</div>
 		<?php
 	}
 	?>
 	<div class="report_row row collapse">
-		<div class="large-2 columns"><span class="prefix"><?php echo Kohana::lang('ui_main.comments'); ?>:</span></div>
-		<div class="large-10 columns"><?php print form::textarea('comment_description', $form['comment_description'], ' rows="4" cols="40" class="textarea" ') ?></div>
+		<div class="large-4 columns"><span class="prefix"><?php echo Kohana::lang('ui_main.comments'); ?>:</span></div>
+		<div class="large-8 columns"><?php print form::textarea('comment_description', $form['comment_description'], ' rows="4" cols="40" class="textarea" ') ?></div>
 	</div>
 	<div class="report_row row collapse">
 		<div class="large-4 columns">
@@ -61,7 +61,7 @@
 	Event::run('ushahidi_action.comment_form');
 	?>
 	<div class="report_row">
-		<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?> <?php echo Kohana::lang('ui_main.comment'); ?>" class="button" />
+		<input name="submit" type="submit" value="<?php echo Kohana::lang('ui_main.reports_btn_submit'); ?> <?php echo Kohana::lang('ui_main.comment'); ?>" class="button expand" />
 	</div>
 	<?php print form::close(); ?>
 	

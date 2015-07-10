@@ -181,12 +181,24 @@ p.r_date {
 div.r_description, #rb_map-view, .report-map .map-holder, .report_optional {
     width: 100%;
 }
+div.r_description p {
+    margin-bottom: 0.313rem;
+}
+.r_media .r_categories {
+    margin-top: 2.125rem;
+    margin-left: 0.250rem;
+}
 ul.filter-list {
     margin-left: 0;
 }
 a.filter-button:hover {
     color: #ffffff;
 }
+.r_details h3 a.r_title {
+    font-size: inherit;
+}
+
+/* Report Comments */
 div.comment-block {
     padding: 10px;
     background: #fafafa;
@@ -208,7 +220,6 @@ ul.map-toggle {
 a.add, a.rem {
     margin: 0 0 12px 2px;
 }
-
 /* Footer */
 div.footermenu {
     margin: 0;

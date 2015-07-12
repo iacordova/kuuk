@@ -43,8 +43,6 @@ echo html::script(url::file_loc('js').'themes/kuuk/js/foundation.min', TRUE);
 
 				</section>
 
-
-
 			</nav>
 
 		</div><!-- / fixed -->

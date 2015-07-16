@@ -227,13 +227,18 @@ div.footermenu {
 }
 
 /* Alerts */
-.step-1, .step-2-holder, .step-2, .step-3 {
+.step-1, .step-2-holder, .step-2, .step-3, .step-1 .map-wrapper {
     margin: initial;
     padding: initial;
     width: 100%;
 }
 .step-2 .box input {
     margin: 0;
+}
+
+/* Contact page */
+textarea#contact_message {
+    width: 100%;
 }
 
 /* Login */

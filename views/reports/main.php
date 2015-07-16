@@ -63,10 +63,10 @@
 					<h4><?php echo Kohana::lang('ui_main.filter_reports_by'); ?></h4>
 					<div id="accordion">
 						
-						<h3>
+						<h4>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('c', 'fl-categories');"><?php echo Kohana::lang('ui_main.clear')?></a>
 							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.category')?></a>
-						</h3>
+						</h4>
 						<div class="f-category-box">
 							<ul class="filter-list fl-categories" id="category-filter-list">
 								<li>
@@ -86,22 +86,22 @@
 							</ul>
 						</div>
 						
-						<h3>	
+						<h4>	
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('radius', 'f-location-box');removeParameterKey('start_loc', 'f-location-box');">
 								<?php echo Kohana::lang('ui_main.clear')?>
 							</a>
-							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.location'); ?></a></h3>
+							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.location'); ?></a></h4>
 						<div class="f-location-box">
 							<?php echo $alert_radius_view; ?>
 							<p></p>
 						</div>
 						
-						<h3>
+						<h4>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('mode', 'fl-incident-mode');">
 								<?php echo Kohana::lang('ui_main.clear')?>
 							</a>
 							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.type')?></a>
-						</h3>
+						</h4>
 						<div class="f-type-box">
 							<ul class="filter-list fl-incident-mode">
 								<li>
@@ -129,10 +129,10 @@
 							</ul>
 						</div>
 						
-						<h3>
+						<h4>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('m', 'fl-media');"><?php echo Kohana::lang('ui_main.clear')?></a>
 							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.media');?></a>
-						</h3>
+						</h4>
 						<div class="f-media-box">
 							<p><?php echo Kohana::lang('ui_main.filter_reports_contain'); ?>&hellip;</p>
 							<ul class="filter-list fl-media">
@@ -157,12 +157,12 @@
 							</ul>
 						</div>
 						
-						<h3>
+						<h4>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('v', 'fl-verification');">
 								<?php echo Kohana::lang('ui_main.clear'); ?>
 							</a>
 							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.verification'); ?></a>
-						</h3>
+						</h4>
 						<div class="f-verification-box">
 							<ul class="filter-list fl-verification">
 								<li>
@@ -180,12 +180,12 @@
 								
 							</ul>
 						</div>
-						<h3>
+						<h4>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('cff', 'fl-customFields');">
 								<?php echo Kohana::lang('ui_main.clear'); ?>
 							</a>
 							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.custom_fields'); ?></a>
-						</h3>
+						</h4>
 						<div class="f-customFields-box">
 							<?php echo $custom_forms_filter; ?>
 							

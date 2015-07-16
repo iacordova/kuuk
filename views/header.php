@@ -76,12 +76,13 @@
 							<?php if ($allow_feed == 1) { ?>
 								<li><a href="<?php echo url::site(); ?>feed/"><img alt="<?php echo html::escape(Kohana::lang('ui_main.rss')); ?>" src="<?php echo url::file_loc('img'); ?>media/img/icon-feed.png" style="vertical-align: middle;" border="0" /></a></li>
 							<?php } ?>
-
-							<?php
-								// Action::header_nav - Add items to header nav area
-								Event::run('ushahidi_action.header_nav');
-							?>
 						</ul>
+
+						<!-- Right Nav Section -->
+						<?php
+							// Action::header_nav - Add items to header nav area
+							Event::run('ushahidi_action.header_nav');
+						?>
 					</section><!-- / top-bar-section -->
 
 				</nav>
